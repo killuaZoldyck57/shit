@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Responsive Navbar</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud project</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
     <header>
-        <div class="navbar">
-            <div class="logo"><a href="#">MahmoudWassim</a></div>
-            <ul class="links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="signup.html">Sign up</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="#">Add information</a></li>
-            </ul>
-          
-          <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
-          </div> 
+        <div class="header-left">
+            <div class="logo">
+                <img src="images/CHADDLogoBlue_1080.jpg" >
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="home.html" class="active">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#"> Create Content</a>
+                    </li>
+                    <li>
+                        <a href="#">Shared content</a>
+                    </li>
+                   
+                </ul>
+                <div class="login-signup">
+                    <a href="login.html">Login</a> or <a href="signup.html">Signup</a>
+                </div>
+            </nav>
         </div>
-        <div class="dropdown_menu">
-            <li><a href="home.html">Home</a></li>
-                <li><a href="signup.html">Sign up</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="#">Add information</a></li>
-            
+        <div class="header-right">
+            <div class="login-signup">
+                <a href="login.html">Login</a> or <a href="signup.html">Signup</a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
+        
     </header>
-    <main>
-        <section id="hero">
-            <h1>Welcome</h1>
-            <p>
-              this is a site that has all the information on autistic people and what is autisim <br/> and if you see any information that is missing you can add that info in Add information 
-            </p>
-        </section>
-    </main>
+    <br>
+      <br>
+      <br>
+      <br>
+      <br>
+     <table class="tb1">
+      <tr>
+        <td>
+    <div class="body">
+      <p>
+      <h2 >Autism spectrum disorder (ASD) is a developmental disability caused by differences in the brain. People with ASD often have problems with social communication and interaction,
+         and restricted or repetitive behaviors or interests. People with ASD may also have different ways of learning, moving, or paying attention. for more information: <a href="#">SharedContent</a>
+        </h2> 
+      </p>
+    </td>
+    </div>
+    <td>
+    <div class="pic">
+      <img src="images/treatment-for-intellectual-and-developmental-disabilities-in-Little-Rock.jpg" >
+    </div>
+  </td>
+  </tr>
+  </table>
     <script>
-        const toggleBtn=document.querySelector('.toggle_btn')
-        const toggleBtnICon=document.querySelector('.toggle_btn i')
-        const dropDownMenu=document.querySelector('.dropdown_menu')
-        toggleBtn.oclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtn.classList=isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
         }
     </script>
-  </body>
+</body>
 </html>
