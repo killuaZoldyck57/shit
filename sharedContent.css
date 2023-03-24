@@ -16,43 +16,14 @@ div{
   margin-right: auto;
  
 }
-.body{
-  margin-left: 120px ;
-  width: 50%;
-  align-items: center;
-  border: solid black;
+  #di1{
+    margin: auto;
+    align-self: center;
 
-  
-}
-table{
-  align-self: center;
-  width: 100%;
-  border-collapse: collapse;
-  
-}
-
-.pic img {
-  width: 500px;
-  height: 500px;
-
-  
-}
-.pic{
-  align-items: center;
- 
-  
-}
-table{
-  margin: auto;
-
-  width: 100%;
-  align-items: center;
-}
+  }
 td{
-  width:  75%;
+  width:  50%;
   height: 10px;
-  align-items: center;
-  margin: auto;
   
 }
 
@@ -60,23 +31,20 @@ img {
   width: 75%;
   
 }
-#div1{
-  margin: auto;
-  width: 25%;
+#tdm{
+ 
+  align-items: center;
 }
-#div2{
-  margin: auto;
-  width: 50%;
-  height: 50%;
+#td1{
+  border: solid black;
+  padding: 5px;
 }
-#div3 img{
-  width: 75%;
+#tdj{
+  border: solid black;
+  padding: 5px;
 }
-#div3{
-  margin: auto;
-  width: 45%;
-  height: 75%;
-}
+
+
 
 
 header {
